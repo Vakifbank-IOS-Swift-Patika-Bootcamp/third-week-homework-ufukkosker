@@ -1,0 +1,932 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1181EAF292546E50089DCB0 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1181EAE292546E50089DCB0 /* FloatingTextField.swift */; };
+		E1181EB1292546EA0089DCB0 /* FloatingTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1181EB0292546EA0089DCB0 /* FloatingTextField.xib */; };
+		E1181EB529254AF70089DCB0 /* FloatingTextFieldConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1181EB429254AF70089DCB0 /* FloatingTextFieldConfig.swift */; };
+		E189670D2923FA8100BB8D1C /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189670B2923FA8100BB8D1C /* ChartCell.swift */; };
+		E189670E2923FA8100BB8D1C /* ChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E189670C2923FA8100BB8D1C /* ChartCell.xib */; };
+		E18967132923FD8D00BB8D1C /* EmployeeAndAnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18967112923FD8D00BB8D1C /* EmployeeAndAnimalCell.swift */; };
+		E18967142923FD8D00BB8D1C /* EmployeeAndAnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18967122923FD8D00BB8D1C /* EmployeeAndAnimalCell.xib */; };
+		E18967172924068800BB8D1C /* Animal2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18967162924068800BB8D1C /* Animal2.swift */; };
+		E18967192924069000BB8D1C /* Employee2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18967182924069000BB8D1C /* Employee2.swift */; };
+		E189671E292406DD00BB8D1C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189671D292406DD00BB8D1C /* String+Extension.swift */; };
+		E18967252924080C00BB8D1C /* MainViewControllerDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18967242924080C00BB8D1C /* MainViewControllerDataProviderProtocol.swift */; };
+		E18967272924082D00BB8D1C /* MainViewControllerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18967262924082D00BB8D1C /* MainViewControllerViewModelProtocol.swift */; };
+		E18967292924094600BB8D1C /* MainViewControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18967282924094600BB8D1C /* MainViewControllerDataProvider.swift */; };
+		E189672B2924096600BB8D1C /* ZooManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189672A2924096600BB8D1C /* ZooManager.swift */; };
+		E189672F29240AB700BB8D1C /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189672E29240AB700BB8D1C /* MainViewControllerViewModel.swift */; };
+		E189673229240D7700BB8D1C /* AddEmployeeOrAnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189673029240D7700BB8D1C /* AddEmployeeOrAnimalCell.swift */; };
+		E189673329240D7700BB8D1C /* AddEmployeeOrAnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E189673129240D7700BB8D1C /* AddEmployeeOrAnimalCell.xib */; };
+		E1896738292418FC00BB8D1C /* AddAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1896736292418FC00BB8D1C /* AddAnimalViewController.swift */; };
+		E1896739292418FC00BB8D1C /* AddAnimalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1896737292418FC00BB8D1C /* AddAnimalViewController.xib */; };
+		E189673C29241A4100BB8D1C /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189673B29241A4100BB8D1C /* AddItemView.swift */; };
+		E189673E29241A4500BB8D1C /* AddItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E189673D29241A4500BB8D1C /* AddItemView.xib */; };
+		E1BFF9462923F5B000E98684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BFF9452923F5B000E98684 /* AppDelegate.swift */; };
+		E1BFF9482923F5B000E98684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BFF9472923F5B000E98684 /* SceneDelegate.swift */; };
+		E1BFF94F2923F5B100E98684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BFF94E2923F5B100E98684 /* Assets.xcassets */; };
+		E1BFF9522923F5B100E98684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BFF9502923F5B100E98684 /* LaunchScreen.storyboard */; };
+		E1BFF95B2923F61800E98684 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BFF9592923F61800E98684 /* MainViewController.swift */; };
+		E1BFF95C2923F61800E98684 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1BFF95A2923F61800E98684 /* MainViewController.xib */; };
+		E1C2BD3B292A0BDF005ECA64 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2BD3A292A0BDF005ECA64 /* UIImage+Extension.swift */; };
+		E1C2BD3F292A5090005ECA64 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2BD3E292A5090005ECA64 /* UIColor+Extension.swift */; };
+		E1C2BDA4292AB09F005ECA64 /* AnimalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2BDA2292AB09F005ECA64 /* AnimalListCell.swift */; };
+		E1C2BDA5292AB09F005ECA64 /* AnimalListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C2BDA3292AB09F005ECA64 /* AnimalListCell.xib */; };
+		E1C2BDA9292AB61F005ECA64 /* SeeAllEmployeeAndAnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2BDA7292AB61E005ECA64 /* SeeAllEmployeeAndAnimalCell.swift */; };
+		E1C2BDAA292AB61F005ECA64 /* SeeAllEmployeeAndAnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C2BDA8292AB61F005ECA64 /* SeeAllEmployeeAndAnimalCell.xib */; };
+		E1C2BDAE292ABD47005ECA64 /* EmployeeAnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2BDAC292ABD47005ECA64 /* EmployeeAnimalListViewController.swift */; };
+		E1C2BDAF292ABD47005ECA64 /* EmployeeAnimalListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C2BDAD292ABD47005ECA64 /* EmployeeAnimalListViewController.xib */; };
+		E1CC81A629296A2900CE892A /* Zoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC81A529296A2900CE892A /* Zoo.swift */; };
+		E1CC81A92929769200CE892A /* ZooInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC81A82929769200CE892A /* ZooInfo.swift */; };
+		E1CC81AD292978F100CE892A /* AddBudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC81AB292978F100CE892A /* AddBudgetCell.swift */; };
+		E1CC81AE292978F100CE892A /* AddBudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CC81AC292978F100CE892A /* AddBudgetCell.xib */; };
+		E1CC81B229297AB700CE892A /* AddWaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC81B029297AB700CE892A /* AddWaterCell.swift */; };
+		E1CC81B329297AB700CE892A /* AddWaterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CC81B129297AB700CE892A /* AddWaterCell.xib */; };
+		E1CC81B729297F1C00CE892A /* PayEmployeeSalaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC81B529297F1C00CE892A /* PayEmployeeSalaryCell.swift */; };
+		E1CC81B829297F1C00CE892A /* PayEmployeeSalaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CC81B629297F1C00CE892A /* PayEmployeeSalaryCell.xib */; };
+		E1CC81BC2929925000CE892A /* ZooDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC81BA2929925000CE892A /* ZooDescriptionCell.swift */; };
+		E1CC81BD2929925000CE892A /* ZooDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CC81BB2929925000CE892A /* ZooDescriptionCell.xib */; };
+		E1DD063A2927602D00ED2938 /* AddAnimalViewControllerDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD06392927602D00ED2938 /* AddAnimalViewControllerDataProviderProtocol.swift */; };
+		E1DD063D2927620C00ED2938 /* AddNewAnimalViewControllerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD063C2927620C00ED2938 /* AddNewAnimalViewControllerViewModelProtocol.swift */; };
+		E1DD063F2927634D00ED2938 /* AddAnimalViewControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD063E2927634D00ED2938 /* AddAnimalViewControllerDataProvider.swift */; };
+		E1DD0644292765E000ED2938 /* AddAnimalViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD0643292765E000ED2938 /* AddAnimalViewControllerViewModel.swift */; };
+		E1FD91BC29267EFA00553B1B /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD91BA29267EFA00553B1B /* AddEmployeeViewController.swift */; };
+		E1FD91BD29267EFA00553B1B /* AddEmployeeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FD91BB29267EFA00553B1B /* AddEmployeeViewController.xib */; };
+		E1FD91C02926836900553B1B /* NibloadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD91BF2926836900553B1B /* NibloadableView.swift */; };
+		E1FD91C32926866100553B1B /* FloatingTextFieldDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD91C22926866100553B1B /* FloatingTextFieldDataProtocol.swift */; };
+		E1FD91C62926881400553B1B /* FloatingTextFieldDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD91C52926881400553B1B /* FloatingTextFieldDataModel.swift */; };
+		E1FD91C929268E9C00553B1B /* AddEmployeeViewControllerDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD91C829268E9C00553B1B /* AddEmployeeViewControllerDataProviderProtocol.swift */; };
+		E1FD91CC2926901E00553B1B /* AddEmployeeViewControllerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD91CB2926901E00553B1B /* AddEmployeeViewControllerViewModelProtocol.swift */; };
+		E1FD91CE29269A3300553B1B /* AddEmployeeViewControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD91CD29269A3300553B1B /* AddEmployeeViewControllerDataProvider.swift */; };
+		E1FD91D129269AFE00553B1B /* AddEmployeeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD91D029269AFE00553B1B /* AddEmployeeViewControllerViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E1181EAE292546E50089DCB0 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		E1181EB0292546EA0089DCB0 /* FloatingTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingTextField.xib; sourceTree = "<group>"; };
+		E1181EB429254AF70089DCB0 /* FloatingTextFieldConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextFieldConfig.swift; sourceTree = "<group>"; };
+		E189670B2923FA8100BB8D1C /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		E189670C2923FA8100BB8D1C /* ChartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCell.xib; sourceTree = "<group>"; };
+		E18967112923FD8D00BB8D1C /* EmployeeAndAnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeAndAnimalCell.swift; sourceTree = "<group>"; };
+		E18967122923FD8D00BB8D1C /* EmployeeAndAnimalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeAndAnimalCell.xib; sourceTree = "<group>"; };
+		E18967162924068800BB8D1C /* Animal2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal2.swift; sourceTree = "<group>"; };
+		E18967182924069000BB8D1C /* Employee2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee2.swift; sourceTree = "<group>"; };
+		E189671D292406DD00BB8D1C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E18967242924080C00BB8D1C /* MainViewControllerDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerDataProviderProtocol.swift; sourceTree = "<group>"; };
+		E18967262924082D00BB8D1C /* MainViewControllerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModelProtocol.swift; sourceTree = "<group>"; };
+		E18967282924094600BB8D1C /* MainViewControllerDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerDataProvider.swift; sourceTree = "<group>"; };
+		E189672A2924096600BB8D1C /* ZooManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooManager.swift; sourceTree = "<group>"; };
+		E189672E29240AB700BB8D1C /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
+		E189673029240D7700BB8D1C /* AddEmployeeOrAnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeOrAnimalCell.swift; sourceTree = "<group>"; };
+		E189673129240D7700BB8D1C /* AddEmployeeOrAnimalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEmployeeOrAnimalCell.xib; sourceTree = "<group>"; };
+		E1896736292418FC00BB8D1C /* AddAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimalViewController.swift; sourceTree = "<group>"; };
+		E1896737292418FC00BB8D1C /* AddAnimalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAnimalViewController.xib; sourceTree = "<group>"; };
+		E189673B29241A4100BB8D1C /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		E189673D29241A4500BB8D1C /* AddItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemView.xib; sourceTree = "<group>"; };
+		E1BFF9422923F5B000E98684 /* ZooKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BFF9452923F5B000E98684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1BFF9472923F5B000E98684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1BFF94E2923F5B100E98684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1BFF9512923F5B100E98684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1BFF9532923F5B100E98684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BFF9592923F61800E98684 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E1BFF95A2923F61800E98684 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		E1C2BD3A292A0BDF005ECA64 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		E1C2BD3E292A5090005ECA64 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E1C2BDA2292AB09F005ECA64 /* AnimalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListCell.swift; sourceTree = "<group>"; };
+		E1C2BDA3292AB09F005ECA64 /* AnimalListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalListCell.xib; sourceTree = "<group>"; };
+		E1C2BDA7292AB61E005ECA64 /* SeeAllEmployeeAndAnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllEmployeeAndAnimalCell.swift; sourceTree = "<group>"; };
+		E1C2BDA8292AB61F005ECA64 /* SeeAllEmployeeAndAnimalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeAllEmployeeAndAnimalCell.xib; sourceTree = "<group>"; };
+		E1C2BDAC292ABD47005ECA64 /* EmployeeAnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeAnimalListViewController.swift; sourceTree = "<group>"; };
+		E1C2BDAD292ABD47005ECA64 /* EmployeeAnimalListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeAnimalListViewController.xib; sourceTree = "<group>"; };
+		E1CC81A529296A2900CE892A /* Zoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zoo.swift; sourceTree = "<group>"; };
+		E1CC81A82929769200CE892A /* ZooInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooInfo.swift; sourceTree = "<group>"; };
+		E1CC81AB292978F100CE892A /* AddBudgetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetCell.swift; sourceTree = "<group>"; };
+		E1CC81AC292978F100CE892A /* AddBudgetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBudgetCell.xib; sourceTree = "<group>"; };
+		E1CC81B029297AB700CE892A /* AddWaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWaterCell.swift; sourceTree = "<group>"; };
+		E1CC81B129297AB700CE892A /* AddWaterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWaterCell.xib; sourceTree = "<group>"; };
+		E1CC81B529297F1C00CE892A /* PayEmployeeSalaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayEmployeeSalaryCell.swift; sourceTree = "<group>"; };
+		E1CC81B629297F1C00CE892A /* PayEmployeeSalaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayEmployeeSalaryCell.xib; sourceTree = "<group>"; };
+		E1CC81BA2929925000CE892A /* ZooDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooDescriptionCell.swift; sourceTree = "<group>"; };
+		E1CC81BB2929925000CE892A /* ZooDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZooDescriptionCell.xib; sourceTree = "<group>"; };
+		E1DD06392927602D00ED2938 /* AddAnimalViewControllerDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimalViewControllerDataProviderProtocol.swift; sourceTree = "<group>"; };
+		E1DD063C2927620C00ED2938 /* AddNewAnimalViewControllerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAnimalViewControllerViewModelProtocol.swift; sourceTree = "<group>"; };
+		E1DD063E2927634D00ED2938 /* AddAnimalViewControllerDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimalViewControllerDataProvider.swift; sourceTree = "<group>"; };
+		E1DD0643292765E000ED2938 /* AddAnimalViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimalViewControllerViewModel.swift; sourceTree = "<group>"; };
+		E1FD91BA29267EFA00553B1B /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
+		E1FD91BB29267EFA00553B1B /* AddEmployeeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEmployeeViewController.xib; sourceTree = "<group>"; };
+		E1FD91BF2926836900553B1B /* NibloadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibloadableView.swift; sourceTree = "<group>"; };
+		E1FD91C22926866100553B1B /* FloatingTextFieldDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextFieldDataProtocol.swift; sourceTree = "<group>"; };
+		E1FD91C52926881400553B1B /* FloatingTextFieldDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextFieldDataModel.swift; sourceTree = "<group>"; };
+		E1FD91C829268E9C00553B1B /* AddEmployeeViewControllerDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewControllerDataProviderProtocol.swift; sourceTree = "<group>"; };
+		E1FD91CB2926901E00553B1B /* AddEmployeeViewControllerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewControllerViewModelProtocol.swift; sourceTree = "<group>"; };
+		E1FD91CD29269A3300553B1B /* AddEmployeeViewControllerDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewControllerDataProvider.swift; sourceTree = "<group>"; };
+		E1FD91D029269AFE00553B1B /* AddEmployeeViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewControllerViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1BFF93F2923F5B000E98684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1181EB2292546F70089DCB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1181EB329254AA10089DCB0 /* FloatingTextField */,
+				E1C2BD3D292A504F005ECA64 /* FloatingTextFieldDataModel */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1181EB329254AA10089DCB0 /* FloatingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E1181EAE292546E50089DCB0 /* FloatingTextField.swift */,
+				E1181EB0292546EA0089DCB0 /* FloatingTextField.xib */,
+				E1181EB629254AFE0089DCB0 /* Config */,
+				E1FD91C42926875300553B1B /* Protocol */,
+			);
+			path = FloatingTextField;
+			sourceTree = "<group>";
+		};
+		E1181EB629254AFE0089DCB0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E1181EB429254AF70089DCB0 /* FloatingTextFieldConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E189670F2923FA8500BB8D1C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E18967102923FA8B00BB8D1C /* Chart */,
+				E18967152923FD9100BB8D1C /* EmployeeAndAnimal */,
+				E189673429240D7C00BB8D1C /* AddEmployeeOrAnimal */,
+				E1CC81AF292978F400CE892A /* AddBudget */,
+				E1CC81B429297ABA00CE892A /* AddWater */,
+				E1CC81B929297F1F00CE892A /* PayEmployeeSalary */,
+				E1CC81BE2929925400CE892A /* ZooDescription */,
+				E1C2BDA6292AB0A3005ECA64 /* AnimalList */,
+				E1C2BDAB292AB622005ECA64 /* SeeAllEmployeeAndAnimal */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E18967102923FA8B00BB8D1C /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				E189670B2923FA8100BB8D1C /* ChartCell.swift */,
+				E189670C2923FA8100BB8D1C /* ChartCell.xib */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		E18967152923FD9100BB8D1C /* EmployeeAndAnimal */ = {
+			isa = PBXGroup;
+			children = (
+				E18967112923FD8D00BB8D1C /* EmployeeAndAnimalCell.swift */,
+				E18967122923FD8D00BB8D1C /* EmployeeAndAnimalCell.xib */,
+			);
+			path = EmployeeAndAnimal;
+			sourceTree = "<group>";
+		};
+		E189671A2924069A00BB8D1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E189671B2924069E00BB8D1C /* Animal */,
+				E189671C292406A500BB8D1C /* Employee */,
+				E1CC81A729296A2D00CE892A /* Zoo */,
+				E1CC81AA2929769800CE892A /* ZooInfo */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E189671B2924069E00BB8D1C /* Animal */ = {
+			isa = PBXGroup;
+			children = (
+				E18967162924068800BB8D1C /* Animal2.swift */,
+			);
+			name = Animal;
+			path = "Animalü";
+			sourceTree = "<group>";
+		};
+		E189671C292406A500BB8D1C /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				E18967182924069000BB8D1C /* Employee2.swift */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		E189671F292406E000BB8D1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1896720292406E600BB8D1C /* String */,
+				E1C2BD3C292A0ED9005ECA64 /* UIImage */,
+				E1C2BD40292A50EF005ECA64 /* UIColor */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1896720292406E600BB8D1C /* String */ = {
+			isa = PBXGroup;
+			children = (
+				E189671D292406DD00BB8D1C /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		E1896723292407E600BB8D1C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E18967242924080C00BB8D1C /* MainViewControllerDataProviderProtocol.swift */,
+				E18967262924082D00BB8D1C /* MainViewControllerViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E189672C2924096A00BB8D1C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E189672A2924096600BB8D1C /* ZooManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E189672D29240A9900BB8D1C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E18967282924094600BB8D1C /* MainViewControllerDataProvider.swift */,
+				E189672E29240AB700BB8D1C /* MainViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E189673429240D7C00BB8D1C /* AddEmployeeOrAnimal */ = {
+			isa = PBXGroup;
+			children = (
+				E189673029240D7700BB8D1C /* AddEmployeeOrAnimalCell.swift */,
+				E189673129240D7700BB8D1C /* AddEmployeeOrAnimalCell.xib */,
+			);
+			path = AddEmployeeOrAnimal;
+			sourceTree = "<group>";
+		};
+		E189673529240F3A00BB8D1C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFF9592923F61800E98684 /* MainViewController.swift */,
+				E1BFF95A2923F61800E98684 /* MainViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E189673A2924190000BB8D1C /* AddAnimal */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD06382927600000ED2938 /* ViewController */,
+				E1DD063B292761E900ED2938 /* Protocols */,
+				E1DD06402927644700ED2938 /* ViewModel */,
+			);
+			path = AddAnimal;
+			sourceTree = "<group>";
+		};
+		E189673F29241A4C00BB8D1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E189674029241A5200BB8D1C /* AddItem */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E189674029241A5200BB8D1C /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				E189673B29241A4100BB8D1C /* AddItemView.swift */,
+				E189673D29241A4500BB8D1C /* AddItemView.xib */,
+			);
+			path = AddItem;
+			sourceTree = "<group>";
+		};
+		E1BFF9392923F5B000E98684 = {
+			isa = PBXGroup;
+			children = (
+				E1BFF9442923F5B000E98684 /* ZooKeeper */,
+				E1BFF9432923F5B000E98684 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1BFF9432923F5B000E98684 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFF9422923F5B000E98684 /* ZooKeeper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1BFF9442923F5B000E98684 /* ZooKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFF95F2923F6D900E98684 /* Delegates */,
+				E1BFF95E2923F64D00E98684 /* Modules */,
+				E1BFF9612923F70000E98684 /* Resources */,
+				E1BFF9602923F6EB00E98684 /* Storyboard */,
+				E1BFF9622923F71D00E98684 /* Supports */,
+				E189671A2924069A00BB8D1C /* Models */,
+				E189671F292406E000BB8D1C /* Extensions */,
+				E189672C2924096A00BB8D1C /* Managers */,
+				E1181EB2292546F70089DCB0 /* Views */,
+				E1FD91C12926837100553B1B /* Nibloadable */,
+			);
+			path = ZooKeeper;
+			sourceTree = "<group>";
+		};
+		E1BFF95D2923F62200E98684 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E189673529240F3A00BB8D1C /* ViewController */,
+				E1896723292407E600BB8D1C /* Protocols */,
+				E189672D29240A9900BB8D1C /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E1BFF95E2923F64D00E98684 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFF95D2923F62200E98684 /* Main */,
+				E189670F2923FA8500BB8D1C /* Cells */,
+				E189673A2924190000BB8D1C /* AddAnimal */,
+				E189673F29241A4C00BB8D1C /* View */,
+				E1FD91BE29267EFE00553B1B /* AddEmployee */,
+				E1C2BDB0292ABD4C005ECA64 /* EmployeeAnimalList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E1BFF95F2923F6D900E98684 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFF9452923F5B000E98684 /* AppDelegate.swift */,
+				E1BFF9472923F5B000E98684 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		E1BFF9602923F6EB00E98684 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFF9502923F5B100E98684 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E1BFF9612923F70000E98684 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFF94E2923F5B100E98684 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1BFF9622923F71D00E98684 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFF9532923F5B100E98684 /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		E1C2BD3C292A0ED9005ECA64 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2BD3A292A0BDF005ECA64 /* UIImage+Extension.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		E1C2BD3D292A504F005ECA64 /* FloatingTextFieldDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1FD91C52926881400553B1B /* FloatingTextFieldDataModel.swift */,
+			);
+			path = FloatingTextFieldDataModel;
+			sourceTree = "<group>";
+		};
+		E1C2BD40292A50EF005ECA64 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2BD3E292A5090005ECA64 /* UIColor+Extension.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		E1C2BDA6292AB0A3005ECA64 /* AnimalList */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2BDA2292AB09F005ECA64 /* AnimalListCell.swift */,
+				E1C2BDA3292AB09F005ECA64 /* AnimalListCell.xib */,
+			);
+			path = AnimalList;
+			sourceTree = "<group>";
+		};
+		E1C2BDAB292AB622005ECA64 /* SeeAllEmployeeAndAnimal */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2BDA7292AB61E005ECA64 /* SeeAllEmployeeAndAnimalCell.swift */,
+				E1C2BDA8292AB61F005ECA64 /* SeeAllEmployeeAndAnimalCell.xib */,
+			);
+			path = SeeAllEmployeeAndAnimal;
+			sourceTree = "<group>";
+		};
+		E1C2BDB0292ABD4C005ECA64 /* EmployeeAnimalList */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2BDAC292ABD47005ECA64 /* EmployeeAnimalListViewController.swift */,
+				E1C2BDAD292ABD47005ECA64 /* EmployeeAnimalListViewController.xib */,
+			);
+			path = EmployeeAnimalList;
+			sourceTree = "<group>";
+		};
+		E1CC81A729296A2D00CE892A /* Zoo */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC81A529296A2900CE892A /* Zoo.swift */,
+			);
+			path = Zoo;
+			sourceTree = "<group>";
+		};
+		E1CC81AA2929769800CE892A /* ZooInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC81A82929769200CE892A /* ZooInfo.swift */,
+			);
+			path = ZooInfo;
+			sourceTree = "<group>";
+		};
+		E1CC81AF292978F400CE892A /* AddBudget */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC81AB292978F100CE892A /* AddBudgetCell.swift */,
+				E1CC81AC292978F100CE892A /* AddBudgetCell.xib */,
+			);
+			path = AddBudget;
+			sourceTree = "<group>";
+		};
+		E1CC81B429297ABA00CE892A /* AddWater */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC81B029297AB700CE892A /* AddWaterCell.swift */,
+				E1CC81B129297AB700CE892A /* AddWaterCell.xib */,
+			);
+			path = AddWater;
+			sourceTree = "<group>";
+		};
+		E1CC81B929297F1F00CE892A /* PayEmployeeSalary */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC81B529297F1C00CE892A /* PayEmployeeSalaryCell.swift */,
+				E1CC81B629297F1C00CE892A /* PayEmployeeSalaryCell.xib */,
+			);
+			path = PayEmployeeSalary;
+			sourceTree = "<group>";
+		};
+		E1CC81BE2929925400CE892A /* ZooDescription */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC81BA2929925000CE892A /* ZooDescriptionCell.swift */,
+				E1CC81BB2929925000CE892A /* ZooDescriptionCell.xib */,
+			);
+			path = ZooDescription;
+			sourceTree = "<group>";
+		};
+		E1DD06382927600000ED2938 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1896736292418FC00BB8D1C /* AddAnimalViewController.swift */,
+				E1896737292418FC00BB8D1C /* AddAnimalViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E1DD063B292761E900ED2938 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD06392927602D00ED2938 /* AddAnimalViewControllerDataProviderProtocol.swift */,
+				E1DD063C2927620C00ED2938 /* AddNewAnimalViewControllerViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E1DD06402927644700ED2938 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD063E2927634D00ED2938 /* AddAnimalViewControllerDataProvider.swift */,
+				E1DD0643292765E000ED2938 /* AddAnimalViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1FD91BE29267EFE00553B1B /* AddEmployee */ = {
+			isa = PBXGroup;
+			children = (
+				E1FD91C729268E5B00553B1B /* ViewController */,
+				E1FD91CA29268ECE00553B1B /* Protocols */,
+				E1FD91CF29269A3600553B1B /* ViewModel */,
+			);
+			path = AddEmployee;
+			sourceTree = "<group>";
+		};
+		E1FD91C12926837100553B1B /* Nibloadable */ = {
+			isa = PBXGroup;
+			children = (
+				E1FD91BF2926836900553B1B /* NibloadableView.swift */,
+			);
+			path = Nibloadable;
+			sourceTree = "<group>";
+		};
+		E1FD91C42926875300553B1B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E1FD91C22926866100553B1B /* FloatingTextFieldDataProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E1FD91C729268E5B00553B1B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1FD91BA29267EFA00553B1B /* AddEmployeeViewController.swift */,
+				E1FD91BB29267EFA00553B1B /* AddEmployeeViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E1FD91CA29268ECE00553B1B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E1FD91C829268E9C00553B1B /* AddEmployeeViewControllerDataProviderProtocol.swift */,
+				E1FD91CB2926901E00553B1B /* AddEmployeeViewControllerViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E1FD91CF29269A3600553B1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1FD91CD29269A3300553B1B /* AddEmployeeViewControllerDataProvider.swift */,
+				E1FD91D029269AFE00553B1B /* AddEmployeeViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1BFF9412923F5B000E98684 /* ZooKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1BFF9562923F5B100E98684 /* Build configuration list for PBXNativeTarget "ZooKeeper" */;
+			buildPhases = (
+				E1BFF93E2923F5B000E98684 /* Sources */,
+				E1BFF93F2923F5B000E98684 /* Frameworks */,
+				E1BFF9402923F5B000E98684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZooKeeper;
+			productName = ZooKeeper;
+			productReference = E1BFF9422923F5B000E98684 /* ZooKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1BFF93A2923F5B000E98684 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E1BFF9412923F5B000E98684 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = E1BFF93D2923F5B000E98684 /* Build configuration list for PBXProject "ZooKeeper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1BFF9392923F5B000E98684;
+			productRefGroup = E1BFF9432923F5B000E98684 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1BFF9412923F5B000E98684 /* ZooKeeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1BFF9402923F5B000E98684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E189670E2923FA8100BB8D1C /* ChartCell.xib in Resources */,
+				E1181EB1292546EA0089DCB0 /* FloatingTextField.xib in Resources */,
+				E1FD91BD29267EFA00553B1B /* AddEmployeeViewController.xib in Resources */,
+				E18967142923FD8D00BB8D1C /* EmployeeAndAnimalCell.xib in Resources */,
+				E1896739292418FC00BB8D1C /* AddAnimalViewController.xib in Resources */,
+				E1C2BDA5292AB09F005ECA64 /* AnimalListCell.xib in Resources */,
+				E1CC81B329297AB700CE892A /* AddWaterCell.xib in Resources */,
+				E1CC81AE292978F100CE892A /* AddBudgetCell.xib in Resources */,
+				E189673E29241A4500BB8D1C /* AddItemView.xib in Resources */,
+				E189673329240D7700BB8D1C /* AddEmployeeOrAnimalCell.xib in Resources */,
+				E1CC81BD2929925000CE892A /* ZooDescriptionCell.xib in Resources */,
+				E1C2BDAA292AB61F005ECA64 /* SeeAllEmployeeAndAnimalCell.xib in Resources */,
+				E1BFF9522923F5B100E98684 /* LaunchScreen.storyboard in Resources */,
+				E1BFF94F2923F5B100E98684 /* Assets.xcassets in Resources */,
+				E1C2BDAF292ABD47005ECA64 /* EmployeeAnimalListViewController.xib in Resources */,
+				E1CC81B829297F1C00CE892A /* PayEmployeeSalaryCell.xib in Resources */,
+				E1BFF95C2923F61800E98684 /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1BFF93E2923F5B000E98684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1FD91C62926881400553B1B /* FloatingTextFieldDataModel.swift in Sources */,
+				E1C2BD3F292A5090005ECA64 /* UIColor+Extension.swift in Sources */,
+				E1FD91CC2926901E00553B1B /* AddEmployeeViewControllerViewModelProtocol.swift in Sources */,
+				E189671E292406DD00BB8D1C /* String+Extension.swift in Sources */,
+				E1181EB529254AF70089DCB0 /* FloatingTextFieldConfig.swift in Sources */,
+				E18967132923FD8D00BB8D1C /* EmployeeAndAnimalCell.swift in Sources */,
+				E189672B2924096600BB8D1C /* ZooManager.swift in Sources */,
+				E18967272924082D00BB8D1C /* MainViewControllerViewModelProtocol.swift in Sources */,
+				E189670D2923FA8100BB8D1C /* ChartCell.swift in Sources */,
+				E1FD91CE29269A3300553B1B /* AddEmployeeViewControllerDataProvider.swift in Sources */,
+				E18967252924080C00BB8D1C /* MainViewControllerDataProviderProtocol.swift in Sources */,
+				E1DD063D2927620C00ED2938 /* AddNewAnimalViewControllerViewModelProtocol.swift in Sources */,
+				E1C2BDAE292ABD47005ECA64 /* EmployeeAnimalListViewController.swift in Sources */,
+				E1FD91C929268E9C00553B1B /* AddEmployeeViewControllerDataProviderProtocol.swift in Sources */,
+				E1CC81A92929769200CE892A /* ZooInfo.swift in Sources */,
+				E1DD063F2927634D00ED2938 /* AddAnimalViewControllerDataProvider.swift in Sources */,
+				E189672F29240AB700BB8D1C /* MainViewControllerViewModel.swift in Sources */,
+				E1FD91C02926836900553B1B /* NibloadableView.swift in Sources */,
+				E1CC81A629296A2900CE892A /* Zoo.swift in Sources */,
+				E1C2BDA4292AB09F005ECA64 /* AnimalListCell.swift in Sources */,
+				E1CC81B229297AB700CE892A /* AddWaterCell.swift in Sources */,
+				E1FD91BC29267EFA00553B1B /* AddEmployeeViewController.swift in Sources */,
+				E1C2BDA9292AB61F005ECA64 /* SeeAllEmployeeAndAnimalCell.swift in Sources */,
+				E1BFF9462923F5B000E98684 /* AppDelegate.swift in Sources */,
+				E18967192924069000BB8D1C /* Employee2.swift in Sources */,
+				E18967292924094600BB8D1C /* MainViewControllerDataProvider.swift in Sources */,
+				E189673229240D7700BB8D1C /* AddEmployeeOrAnimalCell.swift in Sources */,
+				E1CC81BC2929925000CE892A /* ZooDescriptionCell.swift in Sources */,
+				E1DD063A2927602D00ED2938 /* AddAnimalViewControllerDataProviderProtocol.swift in Sources */,
+				E1BFF9482923F5B000E98684 /* SceneDelegate.swift in Sources */,
+				E1181EAF292546E50089DCB0 /* FloatingTextField.swift in Sources */,
+				E1FD91C32926866100553B1B /* FloatingTextFieldDataProtocol.swift in Sources */,
+				E1BFF95B2923F61800E98684 /* MainViewController.swift in Sources */,
+				E1CC81B729297F1C00CE892A /* PayEmployeeSalaryCell.swift in Sources */,
+				E1DD0644292765E000ED2938 /* AddAnimalViewControllerViewModel.swift in Sources */,
+				E1C2BD3B292A0BDF005ECA64 /* UIImage+Extension.swift in Sources */,
+				E18967172924068800BB8D1C /* Animal2.swift in Sources */,
+				E1CC81AD292978F100CE892A /* AddBudgetCell.swift in Sources */,
+				E1FD91D129269AFE00553B1B /* AddEmployeeViewControllerViewModel.swift in Sources */,
+				E1896738292418FC00BB8D1C /* AddAnimalViewController.swift in Sources */,
+				E189673C29241A4100BB8D1C /* AddItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1BFF9502923F5B100E98684 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1BFF9512923F5B100E98684 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1BFF9542923F5B100E98684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1BFF9552923F5B100E98684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1BFF9572923F5B100E98684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63Y74HYCKH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZooKeeper/Supports/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ufukkosker.ZooKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E1BFF9582923F5B100E98684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63Y74HYCKH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZooKeeper/Supports/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ufukkosker.ZooKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1BFF93D2923F5B000E98684 /* Build configuration list for PBXProject "ZooKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BFF9542923F5B100E98684 /* Debug */,
+				E1BFF9552923F5B100E98684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1BFF9562923F5B100E98684 /* Build configuration list for PBXNativeTarget "ZooKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BFF9572923F5B100E98684 /* Debug */,
+				E1BFF9582923F5B100E98684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1BFF93A2923F5B000E98684 /* Project object */;
+}
